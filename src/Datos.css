@@ -1,0 +1,33 @@
+.sidebar {
+    height: 100vh;
+    color: #ffff;
+    position: static;
+}
+
+.imgportada {
+    width: 100%;
+    ;
+}
+
+.imgperfil {
+    position: absolute;
+    top: 80%;
+    /* position the top  edge of the element at the middle of the parent */
+    left: 50%;
+    /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    border: 1px solid transparent;
+    border-radius: 6em;
+    box-shadow: 0 0 black;
+}
+
+.textoside {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.cajasobre {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
