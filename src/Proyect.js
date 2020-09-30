@@ -1,6 +1,5 @@
 import React from "react";
-import { ButtonToolbar, Button, Drawer, Panel, Carousel, Icon } from "rsuite";
-import PlaceholderParagraph from "rsuite/lib/Placeholder/PlaceholderParagraph";
+import {  Button, Drawer, Panel, Carousel, Icon } from "rsuite";
 
 class Proyect extends React.Component {
     constructor(props) {
@@ -19,6 +18,9 @@ class Proyect extends React.Component {
     toggleDrawer() {
         this.setState({ show: true });
     }
+
+  
+
     render() {
         return (
             <div>
