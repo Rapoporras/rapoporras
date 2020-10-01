@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'rsuite/dist/styles/rsuite-default.css';
-import App from './App';
+import App from './Pages/App/App';
 import * as serviceWorker from './serviceWorker';
 import './index.css';
 

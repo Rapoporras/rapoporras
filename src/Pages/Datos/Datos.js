@@ -1,13 +1,12 @@
 import React from "react";
-import { ButtonToolbar, Button, Drawer, Panel, FlexboxGrid, Divider, Icon } from "rsuite";
-import PlaceholderParagraph from "rsuite/lib/Placeholder/PlaceholderParagraph";
+import {  Panel, Divider, Icon } from "rsuite";
 import './Datos.css'
 
 class Datos extends React.Component {
-    constructor(props) {
-        super(props);
+    // constructor(props) {
+    //     super(props);
 
-    }
+    // }
 
     render() {
         return (
@@ -18,8 +17,8 @@ class Datos extends React.Component {
                     float: "left",
                     display: "block"
                 }}>
-                    <img src="https://rapoporras.com/assets/img/gamer.jpg" className="imgportada" />
-                    <img src="https://rapoporras.com/assets/img/perfil.png" className="imgperfil" />
+                    <img src="https://rapoporras.com/assets/img/gamer.jpg" className="imgportada"  alt="imgportada_rapoporras"/>
+                    <img src="https://rapoporras.com/assets/img/perfil.png" className="imgperfil" alt="imgperfil_rapoporras"/>
                 </div>
                 <Panel className="textoside">
                     <h4>Ignacio Porras Ibáñez</h4>

@@ -1,0 +1,11 @@
+.contenido {
+  padding: 0px;
+}
+
+@media (min-width: 769px) {
+  .contenido {
+    padding: 0px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
