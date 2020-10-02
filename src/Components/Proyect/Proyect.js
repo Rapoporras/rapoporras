@@ -1,9 +1,8 @@
 import React from "react";
-import { Button, Panel, Icon, Modal } from "rsuite";
+import { Button, Panel, Icon, Drawer } from "rsuite";
 import "../Proyect/Proyect.css";
 
 function Tech(props) {
-  console.log(props.tech);
   switch (props.tech) {
     case "WEB":
       return (
@@ -36,24 +35,31 @@ class Proyect extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      backdrop: true,
       show: false,
     };
     this.close = this.close.bind(this);
-    this.open = this.open.bind(this);
+    this.toggleDrawer = this.toggleDrawer.bind(this);
+    this.abrirenlace = this.abrirenlace.bind(this);
   }
   close() {
     this.setState({
       show: false,
     });
   }
-  open(size) {
-    this.setState({
-      size,
-      show: true,
-    });
+  toggleDrawer() {
+    this.setState({ show: true });
+  }
+
+  abrirenlace(url) {
+    window.open(
+      url,
+      "_blank" // <- This is what makes it open in a new window.
+    );
   }
 
   render() {
+    const { backdrop, show } = this.state;
     return (
       <div
         style={{
@@ -65,35 +71,48 @@ class Proyect extends React.Component {
           bordered
           bodyFill
           className="cajaproyecto"
-          onClick={() => this.open("md")}
+          onClick={this.toggleDrawer}
         >
-          <img src={this.props.img} className="imagenproyecto" alt={this.props.altimg} />
+          <img
+            src={this.props.img}
+            className="imagenproyecto"
+            alt={this.props.altimg}
+          />
           <Tech tech={this.props.tech}></Tech>
           <h6 style={{ margin: 5 }}>{this.props.name}</h6>
         </Panel>
 
-        <Modal
-         
-          show={this.state.show}
+        <Drawer
+          backdrop={backdrop}
+          show={show}
           onHide={this.close}
+          size="xs"
+          className="ventanaModal"
         >
-          <Modal.Header>
-            <Modal.Title>{this.props.name}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <img src={this.props.img} className="imagenproyecto" alt={this.props.altimg}></img>
-
-            <h6 style={{marginTop:15}}> {this.props.descripcion}</h6>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.close} appearance="primary">
-              Ok
+          <Drawer.Header>
+            <Drawer.Title>{this.props.name}</Drawer.Title>
+          </Drawer.Header>
+          <Drawer.Body>
+            <img
+              src={this.props.img}
+              className="imagenproyectodraw"
+              alt={this.props.altimg}
+            />
+            {this.props.descripcion}
+          </Drawer.Body>
+          <Drawer.Footer>
+            <Button
+              onClick={() => this.abrirenlace(this.props.url)}
+              appearance="primary"
+              size='lg'
+            >
+              Visitar proyecto
             </Button>
             <Button onClick={this.close} appearance="subtle">
-              Cancel
+              Cerrar
             </Button>
-          </Modal.Footer>
-        </Modal>
+          </Drawer.Footer>
+        </Drawer>
       </div>
     );
   }

@@ -9,6 +9,13 @@
   width: 100%;
 }
 
+.imagenproyectodraw {
+  border-radius: 2em;
+  width: 100%;
+  border: 1px solid transparent;
+  margin-bottom: 15px;
+}
+
 .cajatec {
   margin-bottom: 5px;
   /* padding-top: 5px; */
@@ -32,3 +39,8 @@
 .backweb {
     background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
 }
+
+.ventanaModal{
+  width: 40%;
+}
+

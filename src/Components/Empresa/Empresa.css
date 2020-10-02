@@ -1,3 +1,10 @@
-.imgempresa{
-    width: 100%;
+.imgempresa {
+  width: 100%;
+}
+
+.nombreEmpresa {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
