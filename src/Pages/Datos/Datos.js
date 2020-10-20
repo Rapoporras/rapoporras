@@ -26,10 +26,10 @@ class Datos extends React.Component {
 
                     <div className="cajasobre">
                         <Divider>Sobre mí</Divider>
-                        <p>Soy un chico de 26 años, gran amante de los videojuegos y la programación. Nací en Antequera pero vivo en Marbella desde que empece mis estudios. Trabajo desde hace dos años pero siempre con ganas de aprender y emprender proyectos nuevos.</p>
+                        <p>Soy un chico de 27 años, gran amante de los videojuegos y la programación. Nací en Antequera pero vivo en Marbella. Trabajo desde hace varios años pero siempre con ganas de aprender y emprender proyectos nuevos.</p>
                     </div>
 
-                    <div>  <Icon icon='github-alt' size="3x" />   <Icon icon='linkedin-square' size="3x" />   <Icon icon='envelope' size="3x" /> </div>
+                    <div>  <a href="https://github.com/Rapoporras?tab=repositories" target="_blank" className="enlaces" ><Icon icon='github-alt'  size="3x" /></a>   <Icon icon='linkedin-square' size="3x" />   <Icon icon='envelope' size="3x" /> </div>
                 </Panel>
 
             </Panel>

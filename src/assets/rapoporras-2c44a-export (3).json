@@ -1,18 +1,18 @@
 {
   "Experiencia" : {
     "empresa1" : {
-      "imagen" : "",
+      "imagen" : "https://firebasestorage.googleapis.com/v0/b/rapoporras-2c44a.appspot.com/o/Empresas%2Flogo-uni.png?alt=media&token=abd86e2e-afac-49fd-a43d-200f9c55bb87",
       "nombre" : "Cartometrics",
       "tiempo" : "2020-02 - 2020-04"
     },
     "empresa2" : {
       "imagen" : "https://firebasestorage.googleapis.com/v0/b/rapoporras-2c44a.appspot.com/o/Empresas%2Flogo-uni.png?alt=media&token=abd86e2e-afac-49fd-a43d-200f9c55bb87",
-      "nombre" : "Universidad de Málaga - IAB",
+      "nombre" : "Universidad de Málaga",
       "tiempo" : "2019-11 - 2021-11"
     },
     "empresa3" : {
       "imagen" : "https://firebasestorage.googleapis.com/v0/b/rapoporras-2c44a.appspot.com/o/Empresas%2Flogo-eye.png?alt=media&token=44c800cc-080d-4dc8-a536-3553b70827bf",
-      "nombre" : "Eye Inversiones online",
+      "nombre" : "Eye Inversiones",
       "tiempo" : "2018-06 - 2019-06"
     },
     "empresa4" : {
@@ -37,7 +37,7 @@
     },
     "empresa8" : {
       "imagen" : "https://firebasestorage.googleapis.com/v0/b/rapoporras-2c44a.appspot.com/o/Empresas%2Flogo-at4.png?alt=media&token=786d5d81-4ae4-4f59-9d85-33406d2c8b28",
-      "nombre" : "At4 Wireless - Dekra - Centro de I+D",
+      "nombre" : "At4 Wireless - Dekra",
       "tiempo" : "2016-03 - 2016-06"
     }
   },
@@ -104,15 +104,6 @@
       "orden" : "g",
       "tecnologias" : "DESKTOP",
       "url" : "https://github.com/Rapoporras/Buscador-Texto-en-Archivos-Pdf.git"
-    },
-    "h" : {
-      "altimagen" : "rapoporras_solclick",
-      "descripcion" : "Aplicación para la búsqueda de chiringuitos en la costa malagueña.",
-      "imagen" : "https://firebasestorage.googleapis.com/v0/b/rapoporras-2c44a.appspot.com/o/Proyectos%2Fsolclick.png?alt=media&token=7eee37a8-ae1e-4fb4-a980-968360a1453c",
-      "nombre" : "Solclick",
-      "orden" : "h",
-      "tecnologias" : "APP",
-      "url" : "https://apkpure.com/es/solclick/com.hoydevelopers.solclick"
     },
     "i" : {
       "altimagen" : "rapoporras_the_gamer",

@@ -31,3 +31,12 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+.enlaces{
+    text-decoration: none;
+    color: white;
+}
+.enlaces:active{
+   
+    color: white;
+}
