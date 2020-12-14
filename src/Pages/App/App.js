@@ -5,6 +5,7 @@ import Datos from "../Datos/Datos";
 import Empresas from "../Empresas/Empresas";
 import "./App.css"
 import Habilidades from "../../Components/Habilidades/Habilidades";
+import Premios from "../Premios/Premios";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
           </Col>
           <Col xs={24} sm={24} md={18} className="contenido">
             <Empresas></Empresas>
-            <Habilidades></Habilidades>
+            
+            <Premios></Premios>
             <Proyects></Proyects>
             <Footer></Footer>
           </Col>

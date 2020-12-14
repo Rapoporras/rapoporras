@@ -1,43 +1,44 @@
 import React from "react";
 import { Content, Grid, Row, Col } from "rsuite";
 import fire from "../../assets/fire";
-import Empresa from "../../Components/Empresa/Empresa";
+import Premio from "../../Components/Premio/Premio";
 
 
 
-function CargarEmpresa(props) {
-  let empresasList, array;
+function CargarPremio(props) {
+  let PremiosList, array;
 
-  array = Object.values(props.empresas);
+  array = Object.values(props.Premios);
 
   if (array.length !== 0) {
-    empresasList = array.map((empresa) => {
+    PremiosList = array.map((premio) => {
       return (
-        <Col xs={24} sm={8} md={6} lg={4} key={empresa.key} >
-          <Empresa
-            name={empresa.nombre} img={empresa.imagen}   date={empresa.tiempo}       ></Empresa>
+        <Col xs={24} sm={12} md={12} key={premio.key}>
+           <Premio
+            name={premio.nombre} img={premio.imagen}></Premio> 
+       
         </Col>
       );
     });
   } else {
-    empresasList = <div></div>;
+    PremiosList = <div></div>;
   }
 
-  return empresasList;
+  return PremiosList;
 }
 
-class Empresas extends React.Component {
+class Premios extends React.Component {
   constructor() {
     super();
     this.state = {
-        empresas: [],
+        Premios: [],
     };
   }
 
   componentDidMount() {
-    this.database = fire.database().ref().child("Experiencia");
+    this.database = fire.database().ref().child("Premios");
     this.database.on("value", (snap) => {
-      this.setState({ empresas: snap.val() });
+      this.setState({ Premios: snap.val() });
     });
   }
   render() {
@@ -50,7 +51,7 @@ class Empresas extends React.Component {
         <div style={{ marginTop: "15px" }}>
           <Grid fluid>
             <Row className="show-grid">
-              <CargarEmpresa empresas={this.state.empresas}></CargarEmpresa>
+              <CargarPremio Premios={this.state.Premios}></CargarPremio>
             </Row>
           </Grid>
         </div>
@@ -59,4 +60,4 @@ class Empresas extends React.Component {
   }
 }
 
-export default Empresas;
+export default Premios;

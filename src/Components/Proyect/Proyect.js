@@ -79,7 +79,7 @@ class Proyect extends React.Component {
             alt={this.props.altimg}
           />
           <Tech tech={this.props.tech}></Tech>
-          <h6 style={{ margin: 5 }}>{this.props.name}</h6>
+          <h6 style={{ margin: 5,fontSize:15 }}>{this.props.name}</h6>
         </Panel>
 
         <Drawer

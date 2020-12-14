@@ -1,0 +1,20 @@
+.imgPremio {
+  width: 100%;
+  /* border-bottom-right-radius: 2em; */
+}
+.nombrePremio {
+  color: white;
+  background-color: rgb(0, 105, 92);
+  height: 70px;
+  padding-top: 20px;
+}
+
+.textdescripcion {
+  padding-top: 15px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.fondopremio {
+  background-color: rgb(0, 105, 92);
+}

@@ -13,7 +13,7 @@ function CargarProyecto(props) {
   if (array.length !== 0) {
     proyectsList = array.map((proyect) => {
       return (
-        <Col xs={24} sm={24} md={8} key={proyect.key}>
+        <Col xs={24} sm={8} md={8} key={proyect.key}>
           <Proyect
             name={proyect.nombre}
             img={proyect.imagen}
