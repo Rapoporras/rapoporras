@@ -20,12 +20,12 @@ class Datos extends React.Component {
           }}
         >
           <img
-            src="https://rapoporras.com/assets/img/gamer.jpg"
+            src="https://firebasestorage.googleapis.com/v0/b/rapoporras-2c44a.appspot.com/o/gamer.jpg?alt=media&token=95b97d2a-ffff-45d3-9562-8ce10f1fb23a"
             className="imgportada"
             alt="imgportada_rapoporras"
           />
           <img
-            src="https://rapoporras.com/assets/img/perfil.png"
+            src="https://firebasestorage.googleapis.com/v0/b/rapoporras-2c44a.appspot.com/o/perfil.png?alt=media&token=e8a1b1c1-6f90-49b9-9164-2a5aa94c816d"
             className="imgperfil"
             alt="imgperfil_rapoporras"
           />
