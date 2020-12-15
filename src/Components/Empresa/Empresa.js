@@ -18,14 +18,14 @@ class Empresa extends React.Component {
         <Panel shaded bordered bodyFill onClick={() => this.open("md")}>
           <Grid fluid>
             <Row className="show-grid">
-              <Col xs={24} sm={24} md={24} style={{ padding: 0 }}>
+              <Col xs={24} sm={24} md={24} style={{ padding: 0 }} className="fondo">
                 <img
                   src={this.props.img}
                   className="imgempresa"
                   alt={this.props.altimg}
                 />
               </Col>
-              <Col xs={24} sm={24} md={24} className="nombreEmpresa" style={{height: 40}}>
+              <Col xs={24} sm={24} md={24} className="nombreEmpresa" style={{height: 40,backgroundColor: "white"}}>
                 <h6 style={{fontSize: 14}}>{this.props.name}</h6>
               </Col>
               <Col

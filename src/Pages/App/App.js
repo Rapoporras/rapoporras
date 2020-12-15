@@ -3,7 +3,7 @@ import { Grid, Row, Col, Footer } from "rsuite";
 import Proyects from "../Proyectos/Proyects";
 import Datos from "../Datos/Datos";
 import Empresas from "../Empresas/Empresas";
-import "./App.css"
+import "./App.css";
 import Habilidades from "../../Components/Habilidades/Habilidades";
 import Premios from "../Premios/Premios";
 
@@ -23,8 +23,17 @@ function App() {
           </Col>
           <Col xs={24} sm={24} md={18} className="contenido">
             <Empresas></Empresas>
-            
-            <Premios></Premios>
+            <Grid fluid>
+              <Row className="show-grid">
+                <Col xs={24} sm={24} md={24}  lg={14}>
+                  <Premios></Premios>
+                </Col>
+                <Col xs={24} sm={24} md={24}  lg={10}>
+              
+                  <Habilidades></Habilidades>
+                </Col>
+              </Row>
+            </Grid>
             <Proyects></Proyects>
             <Footer></Footer>
           </Col>

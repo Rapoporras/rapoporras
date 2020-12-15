@@ -13,9 +13,9 @@ function CargarPremio(props) {
   if (array.length !== 0) {
     PremiosList = array.map((premio) => {
       return (
-        <Col xs={24} sm={12} md={12} key={premio.key}>
+        <Col xs={24} sm={24} md={24} key={premio.key}>
            <Premio
-            name={premio.nombre} img={premio.imagen}></Premio> 
+            name={premio.nombre} img={premio.imagen} reto={premio.reto}></Premio> 
        
         </Col>
       );
@@ -47,7 +47,7 @@ class Premios extends React.Component {
       <Content
         style={{  textAlign: "center", padding: "15px" }}
       >
-        <h3>Experiencia</h3>
+        <h3>Reconocimientos</h3>
         <div style={{ marginTop: "15px" }}>
           <Grid fluid>
             <Row className="show-grid">

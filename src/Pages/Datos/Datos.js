@@ -70,7 +70,7 @@ class Datos extends React.Component {
             </p>
           </div>
 
-          <Habilidades></Habilidades>
+        
         </Panel>
       </Panel>
     );
