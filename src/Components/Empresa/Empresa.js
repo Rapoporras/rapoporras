@@ -34,10 +34,10 @@ class Empresa extends React.Component {
                 md={24}
                 style={{ color: "white", backgroundColor: "rgb(0, 105, 92)" }}
               >
-                <p>
+              
                   <Icon icon="calendar-o" style={{ marginRight: 15 }} />
                   {this.props.date}
-                </p>
+               
               </Col>
             </Row>
           </Grid>

@@ -30,7 +30,7 @@ class Habilidades extends React.Component {
   render() {
     return (
       <Content style={{ textAlign: "center", padding: "15px" }}>
-        <h3>Experiencia</h3>
+        <h5>Lenguajes - Herramientas - Frameworks</h5>
         <div style={{ backgroundColor: "white", borderRadius: 15 , marginTop: "15px" }}>
           <FontAwesomeIcon
             icon={faHtml5}

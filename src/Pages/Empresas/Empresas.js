@@ -13,7 +13,7 @@ function CargarEmpresa(props) {
   if (array.length !== 0) {
     empresasList = array.map((empresa) => {
       return (
-        <Col xs={24} sm={8} md={6} lg={4} key={empresa.key} >
+        <Col xs={24} sm={8} md={6} lg={6} key={empresa.key} >
           <Empresa
             name={empresa.nombre} img={empresa.imagen}   date={empresa.tiempo}       ></Empresa>
         </Col>
