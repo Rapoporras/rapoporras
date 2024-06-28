@@ -25,13 +25,11 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <ThemeProvider attribute="class">
-        <body className={inter.className + " dark:bg-gray-800 bg-white"}>
-          <NextIntlClientProvider messages={messages}>
-            {children}
-          </NextIntlClientProvider>
-        </body>
-      </ThemeProvider>
+      <body className={inter.className}>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeProvider attribute="class">{children}</ThemeProvider>
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }
