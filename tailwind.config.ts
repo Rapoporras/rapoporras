@@ -7,11 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-lineal": "linear-gradient(to top, #a8edea 0%, #fed6e3 100%);",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
