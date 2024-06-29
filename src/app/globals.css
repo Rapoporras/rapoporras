@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 body {
-  /* color: rgb(var(--foreground-rgb)); */
-  /* background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
-  /* background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); */
+  background-color: #0b0c10;
 }
 
 @layer utilities {
@@ -13,4 +11,87 @@ body {
     text-wrap: balance;
   }
 }
+@keyframes animateBorder {
+  0% {
+    border-color: #45a29e;
+  }
+  50% {
+    border-color: #66fcf1;
+  }
+  100% {
+    border-color: #45a29e;
+  }
+}
 
+.header {
+  background-color: #0b0c10; /* Fondo oscuro */
+  color: #c5c6c7; /* Texto claro */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImage {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.status {
+  /* Color verde */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  border: 2px solid #45a29e; /* Añadir borde */
+  animation: animateBorder 2s infinite; /* Aplicar animación */
+}
+
+.name {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #008080; /* Color azul claro */
+}
+
+.experience {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #008080; /* Color amarillo */
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #1f2833; /* Botón oscuro */
+  color: #c5c6c7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #008080; /* Cambiar color al pasar el ratón */
+}

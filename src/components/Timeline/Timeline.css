@@ -1,0 +1,65 @@
+/* components/Timeline.module.css */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* Color de fondo similar a la imagen */
+}
+
+.timelineItem {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-left: 2px solid #008080; /* Línea de color amarillo */
+  position: relative;
+  color: #fff; /* Color del texto */
+}
+
+.timelineItem::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  background-color: #008080; /* Color del punto */
+  border-radius: 50%;
+  border: 2px solid #1a1a1a;
+}
+
+.timelineContent {
+  margin-left: 20px;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  color: #008080; /* Color amarillo */
+}
+
+.company {
+  font-size: 1em;
+  margin: 5px 0;
+  color: #fff;
+}
+
+.time {
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+.desc {
+  margin: 10px 0;
+}
+
+.languages {
+  margin-top: 10px;
+}
+
+.language {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  color: #000;
+}

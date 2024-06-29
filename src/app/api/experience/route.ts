@@ -1,4 +1,4 @@
-import { getProjects } from "@/lib/notion";
+import { getExperience, getProjects } from "@/lib/notion";
 import { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";
 
@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
   try {
-    const posts = await getProjects();
+    const posts = await getExperience();
     // console.log(posts);
     return new NextResponse(JSON.stringify(posts), {
       status: 200,

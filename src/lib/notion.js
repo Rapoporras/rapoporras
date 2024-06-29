@@ -10,6 +10,7 @@ export async function getExperience() {
   const databaseId = "eb4f8b8849224d4eb8adf77ce3cbbead";
   const response = await notion.databases.query({
     database_id: databaseId,
+    sorts: [{ property: "Order", direction: "descending" }],
   });
 
   return response.results.map((page) => ({
@@ -20,9 +21,7 @@ export async function getExperience() {
     languajes: page.properties["Lenguajes"].multi_select,
     working: page.properties["Working"].checkbox,
     time: page.properties["Time"].number,
-    desc: page.properties["Description"].rich_text[0].plain_text,
-    // dorsal: page.properties["Dorsal"].number,
-    // pos: page.properties["Posicion"].rich_text[0].plain_text,
+    desc: page.properties["Description"].rich_text[0].text.content,
   }));
 
   // return response;
@@ -32,6 +31,7 @@ export async function getProjects() {
   const databaseId = "6a315644ca3e4def9aba3c08142437a9";
   const response = await notion.databases.query({
     database_id: databaseId,
+    sorts: [{ property: "Order", direction: "ascending" }],
   });
 
   return response.results.map((page) => ({
@@ -47,6 +47,7 @@ export async function getProjects() {
     // titleHackathon: page.properties["TitleHackathon"].rich_text[0].plain_text,
     isHackathon: page.properties["Is Hackathon"].checkbox,
     image: page.properties["Image"].url,
+    category: page.properties["Category"].select.name,
     // dorsal: page.properties["Dorsal"].number,
     // pos: page.properties["Posicion"].rich_text[0].plain_text,
   }));

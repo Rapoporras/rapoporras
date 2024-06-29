@@ -1,4 +1,5 @@
 "use client";
+import { Experience } from "@/components/Experience/Experience";
 import { ModeButton } from "@/components/ModeButton/ModeButton";
 import ProyectsTabs from "@/components/ProyectsTabs/ProyectsTabs";
 import { useTranslations } from "next-intl";
@@ -8,32 +9,32 @@ export default function Home() {
   const t = useTranslations("Index");
 
   return (
-    <main className="w-full flex min-h-screen flex-col items-center justify-between p-24 bg-gray-800">
-      <div>
-        {" "}
-        //Presentacion
-        <div>
-          <Image src="" height={10} width={10} alt="img profile" />{" "}
-          <div> Disponible para trabajar</div>
+    <main className="w-full flex  min-h-screen flex-col items-center justify-between p-5 md:p-24">
+      <div className={"header"}>
+        <div className={"profile"}>
+          <img
+            src="/path/to/profile.jpg"
+            alt="Profile"
+            className={"profileImage"}
+          />
+          <span className={"status"}>Disponible para trabajar</span>
         </div>
-        <div>
-          <h1 className="text-4xl font-bold text-white">{t("title")}</h1>
-          <p className="text-white">{t("description")}</p>
-          <div>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-              Contactame
-            </button>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-              Linkedin
-            </button>
-          </div>
+        <h1 className={"name"}>Hey, soy midudev</h1>
+        <p className={"experience"}>
+          +15 años de experiencia.{" "}
+          <span className={"highlight"}>
+            Ingeniero de Software y Creador de Contenido sobre Programación
+          </span>{" "}
+          de Barcelona, España. Especializado en el desarrollo de aplicaciones
+          web únicas.
+        </p>
+        <div className={"buttons"}>
+          <button className={"button"}>Contáctame</button>
+          <button className={"button"}>LinkedIn</button>
         </div>
       </div>
       <div>
-        //Experiencia
-        <div>
-          <h2 className="text-2xl font-bold text-white">{t("experience")}</h2>
-        </div>
+        <Experience />
       </div>
       <div className="w-full">
         <ProyectsTabs />
