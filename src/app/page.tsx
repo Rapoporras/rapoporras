@@ -15,7 +15,7 @@ export default function Home() {
             alt="Profile"
             className={"profileImage"}
           />
-          <span className={"status"}>Disponible para trabajar</span>
+          <span className={"status uppercase"}>Open to Work</span>
         </div>
         <h1 className={"name"}> Ignacio Porras Ibáñez</h1>
         <ul>
