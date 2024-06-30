@@ -59,9 +59,9 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div>
-        <Experience />
-      </div>
+
+      <Experience />
+
       <div className="w-full">
         <h1 className="text-3xl text-white my-5">Projects</h1>
         <ProyectsTabs />

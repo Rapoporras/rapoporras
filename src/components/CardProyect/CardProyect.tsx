@@ -20,7 +20,7 @@ export const ProjectCard: React.FC<Project> = ({
 
   return (
     <div className="p-3 w-full md:w-1/2 xl:w-1/3  self-stretch">
-      <div className="bg-gray-900 rounded-lg shadow-md p-3 w-full  flex flex-col  items-center">
+      <div className="bg-neutral-500/5 border-teal-300 border rounded-lg shadow-md p-3 w-full  flex flex-col  items-center">
         {image ? (
           <div className="flex-shrink-0 bg-white w-full  rounded-md">
             <img
