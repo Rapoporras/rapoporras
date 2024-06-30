@@ -19,7 +19,7 @@ export const Experience = () => {
 
   return (
     <div>
-      <h1>Timeline</h1>
+      <h1 className="text-3xl text-white my-5">Experience</h1>
       {experiences != null && <Timeline experiences={experiences} />}
     </div>
   );

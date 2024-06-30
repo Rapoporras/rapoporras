@@ -34,7 +34,7 @@ export default function ProjectsTabs() {
   };
 
   return (
-    <div className="flex h-screen w-full justify-center pt-24">
+    <div className="flex w-full justify-center ">
       <div className="w-full">
         <TabGroup>
           <TabList className="flex flex-col md:flex-row gap-4 border-t-2 md:border-t-0 border-b-2 border-teal-500 py-2">
@@ -55,7 +55,7 @@ export default function ProjectsTabs() {
             {Object.keys(groupedProjects).map((categoryName) => (
               <TabPanel
                 key={categoryName}
-                className="w-full rounded-xl bg-white/5 p-3"
+                className="w-full rounded-xl  p-3"
               >
                 <div className="flex flex-row flex-wrap ">
                   {groupedProjects[categoryName].map((project, index) => (

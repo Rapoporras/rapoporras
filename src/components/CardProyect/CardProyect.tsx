@@ -9,6 +9,7 @@ export const ProjectCard: React.FC<Project> = ({
   desc,
   github,
   url,
+  desc_en,
   image,
   awards,
   isHackathon,
@@ -18,8 +19,8 @@ export const ProjectCard: React.FC<Project> = ({
   };
 
   return (
-    <div className="p-3 w-full md:w-1/2  self-stretch">
-      <div className="bg-[#121212] rounded-lg shadow-md p-3 w-full  flex flex-col  items-center">
+    <div className="p-3 w-full md:w-1/2 xl:w-1/3  self-stretch">
+      <div className="bg-gray-900 rounded-lg shadow-md p-3 w-full  flex flex-col  items-center">
         {image ? (
           <div className="flex-shrink-0 bg-white w-full  rounded-md">
             <img
@@ -37,14 +38,13 @@ export const ProjectCard: React.FC<Project> = ({
           </div>
           {isHackathon && (
             <div className="flex flex-wrap mt-4 gap-2">
-              <span className="text-xs text-blue-100 bg-blue-500 rounded-full px-2 py-1 inline-block ">
+              <span className="text-xs text-blue-100 bg-teal-900 rounded-full px-2 py-1 inline-block ">
                 Hackathon Project
               </span>
               {awards.map((award) => (
                 <span
                   key={award.id}
-                  className="text-xs text-white px-2 py-1 bg-gray-800 rounded-full"
-                  style={{ backgroundColor: award.color }}
+                  className="text-xs text-white px-2 py-1 bg-teal-900 rounded-full"
                 >
                   {award.name}
                 </span>
@@ -53,9 +53,9 @@ export const ProjectCard: React.FC<Project> = ({
           )}
 
           <p className="text-gray-400 mt-4 text-justify">
-            {truncate(desc, 150)}
+            {truncate(desc_en, 150)}
           </p>
-          <div className="flex flex-wrap mt-4 gap-2">
+          <div className="flex flex-wrap mt-4 gap-2 text-teal-500">
             {frameworks.map((framework) => {
               const Icon = getLanguageIcon(framework.name);
               return <>{Icon && <Icon size={24} />}</>;
@@ -68,7 +68,7 @@ export const ProjectCard: React.FC<Project> = ({
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-white border border-gray-600 rounded-lg px-4 py-2 hover:bg-gray-700"
+                className="text-sm text-white border border-teal-600 rounded-lg px-4 py-2 hover:bg-teal-700"
               >
                 Code
               </a>
@@ -78,7 +78,7 @@ export const ProjectCard: React.FC<Project> = ({
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-white border border-gray-600 rounded-lg px-4 py-2 hover:bg-gray-700"
+                className="text-sm text-white border border-teal-600 rounded-lg px-4 py-2 hover:bg-teal-700"
               >
                 Preview
               </a>

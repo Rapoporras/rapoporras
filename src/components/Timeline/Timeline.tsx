@@ -40,17 +40,21 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
               <p className={"time"}>
                 {exp.time} {exp.time_unit}{" "}
                 {exp.working && (
-                  <span className="ml-2 rounded-md px-2 py-1 bg-[#008080] text-white uppercase font-light">
-                    Actualmente
+                  <span className="ml-2 rounded-md px-2 py-1 bg-teal-800 text-white uppercase font-light">
+                    Currently
                   </span>
                 )}
               </p>
             </div>
-            <div className="w-full md:w-2/3 bg-cyan-900 p-4 rounded-xl">
-              <p className={"desc"}>{exp.desc}</p>
+            <div className="w-full md:w-2/3 bg-teal-900 p-4 rounded-xl">
+              <div
+                className={"desc"}
+                dangerouslySetInnerHTML={{ __html: exp.desc }}
+              ></div>
+
               <div
                 className={
-                  "languages flex flex-wrap gap-2 justify-start items-center"
+                  "languages flex flex-wrap gap-2 justify-start items-center mt-4"
                 }
               >
                 {exp.languajes.map((lang) => {

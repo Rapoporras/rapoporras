@@ -75,6 +75,8 @@ const getLanguageIcon = (language: string): IconType | null => {
       return FaUnity;
     case "shopify":
       return FaShopify;
+    case "react":
+      return FaReact;
     default:
       return null;
   }
