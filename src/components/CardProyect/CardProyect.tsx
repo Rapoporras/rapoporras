@@ -12,6 +12,7 @@ export const ProjectCard: React.FC<Project> = ({
   desc_en,
   image,
   awards,
+  category,
   isHackathon,
 }) => {
   const truncate = (text: string, maxChars: number) => {
@@ -38,9 +39,15 @@ export const ProjectCard: React.FC<Project> = ({
           </div>
           {isHackathon && (
             <div className="flex flex-wrap mt-4 gap-2">
-              <span className="text-xs text-blue-100 bg-teal-900 rounded-full px-2 py-1 inline-block ">
-                Hackathon Project
-              </span>
+              {category == "Games" ? (
+                <span className="text-xs text-blue-100 bg-medium-red-violet-600 rounded-full px-2 py-1 inline-block ">
+                  Game Jam Project
+                </span>
+              ) : (
+                <span className="text-xs text-blue-100 bg-teal-900 rounded-full px-2 py-1 inline-block ">
+                  Hackathon Project
+                </span>
+              )}
               {awards.map((award) => (
                 <span
                   key={award.id}
