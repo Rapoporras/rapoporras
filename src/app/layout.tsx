@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaMailBulk } from "react-icons/fa";
 import Link from "next/link";
+import FloatingMenu from "@/components/FloatingMenu/FloatingMenu";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -45,6 +46,7 @@ export default async function LocaleLayout({
               Email
             </Link>
           </div>
+          {/* <FloatingMenu /> */}
         </ThemeProvider>
       </body>
     </html>
