@@ -96,6 +96,6 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/Rapoporras/Rapoporras/output/snake.svg" alt="Snake animation" />
+![Snake animation](https://raw.githubusercontent.com/Rapoporras/rapoporras/output/snake.svg)
 
 ###
