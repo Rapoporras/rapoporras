@@ -26,7 +26,7 @@ export default function Home() {
             </span>{" "}
           </li>
           <li>
-            2023-2024.{" "} 
+            2024-2025.{" "} 
             <span className={"highlight uppercase"}>
               MASTER IN VIDEO GAME CREATION: SPECIALIZATION IN DESIGN AND
               PROGRAMMING UMA
